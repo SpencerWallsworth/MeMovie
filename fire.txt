@@ -1,0 +1,790 @@
+
+-> Alamofire (4.4.0)
+   Elegant HTTP Networking in Swift
+   pod 'Alamofire', '~> 4.4.0'
+   - Homepage: https://github.com/Alamofire/Alamofire
+   - Source:   https://github.com/Alamofire/Alamofire.git
+   - Versions: 4.4.0, 4.3.0, 4.2.0, 4.1.0, 4.0.1, 4.0.0, 3.5.1, 3.5.0, 3.4.2, 3.4.1, 3.4.0, 3.3.1, 3.3.0, 3.2.1, 3.2.0, 3.1.5, 3.1.4, 3.1.3, 3.1.2, 3.1.1, 3.1.0, 3.0.1, 3.0.0, 3.0.0-beta.3, 3.0.0-beta.2, 3.0.0-beta.1, 2.0.2, 2.0.1, 2.0.0, 2.0.0-beta.4, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 1.3.1, 1.3.0, 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.5, 1.1.4, 1.1.3 [master repo]
+
+-> Alamofire+Result (3.0.0-karumi)
+   Result<Elegant> HTTP Networking in Swift
+   pod 'Alamofire+Result', '~> 3.0.0-karumi'
+   - Homepage: https://github.com/Karumi/Alamofire
+   - Source:   https://github.com/Karumi/Alamofire.git
+   - Versions: 3.0.0-karumi [master repo]
+
+-> Alamofire-Decodable (2.0.0)
+   A trivial method added to alamofire to automagically decode responses using Decodable
+   pod 'Alamofire-Decodable', '~> 2.0.0'
+   - Homepage: https://github.com/deanWombourne/Alamofire-Decodable
+   - Source:   https://github.com/deanWombourne/Alamofire-Decodable.git
+   - Versions: 2.0.0, 1.0.1, 1.0.0 [master repo]
+
+-> Alamofire-Gloss (2.0.0)
+   Convenience Gloss bindings for Alamofire.
+   pod 'Alamofire-Gloss', '~> 2.0.0'
+   - Homepage: https://github.com/spxrogers/Alamofire-Gloss
+   - Source:   https://github.com/spxrogers/Alamofire-Gloss.git
+   - Versions: 2.0.0, 1.0.1, 1.0.0 [master repo]
+   - Subspecs:
+     - Alamofire-Gloss/Core (2.0.0)
+
+-> Alamofire-OAuth2 (0.1.1)
+   A short description of Alamofire-OAuth2.
+   pod 'Alamofire-OAuth2', '~> 0.1.1'
+   - Homepage: https://github.com/pencildrummer/Alamofire-OAuth2
+   - Source:   https://github.com/pencildrummer/Alamofire-OAuth2.git
+   - Versions: 0.1.1 [master repo]
+
+-> Alamofire-Prephirences (2.0.0)
+   Remote preferences and configuration for your application
+   pod 'Alamofire-Prephirences', '~> 2.0.0'
+   - Homepage: https://github.com/phimage/Alamofire-Prephirences
+   - Source:   https://github.com/phimage/Alamofire-Prephirences.git
+   - Versions: 2.0.0, 1.0.1, 1.0.0 [master repo]
+
+-> Alamofire-Result (3.1.5-karumi)
+   Result<Elegant> HTTP Networking in Swift
+   pod 'Alamofire-Result', '~> 3.1.5-karumi'
+   - Homepage: https://github.com/Karumi/Alamofire-Result
+   - Source:   https://github.com/Karumi/Alamofire-Result.git
+   - Versions: 3.1.5-karumi, 3.1.1-karumi, 3.0.0-karumi.1, 3.0.0-karumi [master repo]
+
+-> Alamofire-SwiftyJSON (2.0.0-beta.1)
+   Alamofire extension for serialize NSData to SwiftyJSON
+   pod 'Alamofire-SwiftyJSON', '~> 2.0.0-beta.1'
+   - Homepage: https://github.com/SwiftyJSON/Alamofire-SwiftyJSON
+   - Source:   https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git
+   - Versions: 2.0.0-beta.1, 0.1.1 [master repo]
+
+-> Alamofire-SwiftyXMLParser (1.0.0-alpha1)
+   Alamofire extension for serialize NSData to SwiftyXMLParser
+   pod 'Alamofire-SwiftyXMLParser', '~> 1.0.0-alpha1'
+   - Homepage: https://github.com/kazuhiro4949/Alamofire-SwiftyXMLParser
+   - Source:   https://github.com/kazuhiro4949/Alamofire-SwiftyXMLParser.git
+   - Versions: 1.0.0-alpha1 [master repo]
+
+-> Alamofire-Synchronous (4.0.0)
+   Synchronous requests for Alamofire
+   pod 'Alamofire-Synchronous', '~> 4.0.0'
+   - Homepage: https://github.com/Dalodd/Alamofire-Synchronous
+   - Source:   https://github.com/Dalodd/Alamofire-Synchronous.git
+   - Versions: 4.0.0, 3.0.0 [master repo]
+
+-> Alamofire-YamlSwift (1.0.0)
+   Add Yaml response serializer to Alamofire
+   pod 'Alamofire-YamlSwift', '~> 1.0.0'
+   - Homepage: https://github.com/phimage/Alamofire-YamlSwift
+   - Source:   https://github.com/phimage/Alamofire-YamlSwift.git
+   - Versions: 1.0.0 [master repo]
+
+-> AlamofireActivityLogger (2.3.0)
+   A response serializer for Alamofire which logs both request and response
+   pod 'AlamofireActivityLogger', '~> 2.3.0'
+   - Homepage: https://github.com/ManueGE/AlamofireActivityLogger/
+   - Source:   https://github.com/ManueGE/AlamofireActivityLogger.git
+   - Versions: 2.3.0, 2.2.1, 2.2.0, 2.1.0, 2.0.0, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireAsync (0.1.0)
+   Async extension for Alamofire.
+   pod 'AlamofireAsync', '~> 0.1.0'
+   - Homepage: https://github.com/zhxnlai/AlamofireAsync
+   - Source:   https://github.com/zhxnlai/AlamofireAsync.git
+   - Versions: 0.1.0 [master repo]
+
+-> AlamofireCoreData (1.0.0)
+   A nice Alamofire serializer that convert JSON into NSManagedObject instances.
+   pod 'AlamofireCoreData', '~> 1.0.0'
+   - Homepage: https://github.com/ManueGE/AlamofireCoreData/
+   - Source:   https://github.com/ManueGE/AlamofireCoreData.git
+   - Versions: 1.0.0 [master repo]
+
+-> AlamofireDomain (4.1)
+   Alamofire Swift 3 with iOS 8 deploy target support.
+   pod 'AlamofireDomain', '~> 4.1'
+   - Homepage: https://github.com/tonyli508/AlamofireDomain
+   - Source:   https://github.com/tonyli508/AlamofireDomain.git
+   - Versions: 4.1, 4.0, 2.1.0, 2.0.0, 1.3.2, 1.3.1 [master repo]
+
+-> AlamofireGenome (1.0.1)
+   An Alamofire extension that automatically converts JSON into Swift objects using Genome
+   pod 'AlamofireGenome', '~> 1.0.1'
+   - Homepage: https://github.com/tablexi/AlamofireGenome
+   - Source:   https://github.com/tablexi/AlamofireGenome.git
+   - Versions: 1.0.1 [master repo]
+
+-> AlamofireImage (3.2.0)
+   AlamofireImage is an image component library for Alamofire
+   pod 'AlamofireImage', '~> 3.2.0'
+   - Homepage: https://github.com/Alamofire/AlamofireImage
+   - Source:   https://github.com/Alamofire/AlamofireImage.git
+   - Versions: 3.2.0, 3.1.0, 3.0.0, 2.5.0, 2.4.1, 2.4.0, 2.3.1, 2.3.0, 2.2.0, 2.1.1, 2.1.0, 2.0.0, 2.0.0-beta.2, 2.0.0-beta.1, 1.1.2, 1.1.1, 1.1.0, 1.0.0, 1.0.0-beta.1 [master repo]
+
+-> AlamofireJsonToObjects (2.4.1)
+   An Alamofire extension which converts JSON response data into swift objects using EVReflection
+   pod 'AlamofireJsonToObjects', '~> 2.4.1'
+   - Homepage: https://github.com/evermeer/AlamofireJsonToObjects
+   - Source:   https://github.com/evermeer/AlamofireJsonToObjects.git
+   - Versions: 2.4.1, 2.4.0, 2.3.2, 2.3.1, 2.3.0, 2.2.0, 1.6.0, 1.3.0, 1.2.0, 1.1.0, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireLogger (0.1.1)
+   Tiny Alamofire plugin that logs requests and responses.
+   pod 'AlamofireLogger', '~> 0.1.1'
+   - Homepage: https://github.com/dclelland/AlamofireLogger
+   - Source:   https://github.com/dclelland/AlamofireLogger.git
+   - Versions: 0.1.1, 0.1.0 [master repo]
+
+-> AlamofireManager (0.1.3)
+   A simple manager class that use Alamofire request somedata from server
+   pod 'AlamofireManager', '~> 0.1.3'
+   - Homepage: https://github.com/liukunpengiOS/AlamofireManager
+   - Source:   https://github.com/liukunpengiOS/AlamofireManager.git
+   - Versions: 0.1.3, 0.1.1, 0.0.9, 0.0.8, 0.0.7, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> AlamofireNetworkActivityIndicator (2.1.0)
+   Controls the visibility of the network activity indicator on iOS using Alamofire
+   pod 'AlamofireNetworkActivityIndicator', '~> 2.1.0'
+   - Homepage: https://github.com/Alamofire/AlamofireNetworkActivityIndicator
+   - Source:   https://github.com/Alamofire/AlamofireNetworkActivityIndicator.git
+   - Versions: 2.1.0, 2.0.1, 2.0.0, 1.1.0, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireNetworkActivityLogger (2.2.0)
+   Network request logger for Alamofire
+   pod 'AlamofireNetworkActivityLogger', '~> 2.2.0'
+   - Homepage: https://github.com/konkab/AlamofireNetworkActivityLogger
+   - Source:   https://github.com/konkab/AlamofireNetworkActivityLogger.git
+   - Versions: 2.2.0, 2.0.0, 1.0.0 [master repo]
+
+-> AlamofireNetworkLogger (0.0.2)
+   Network Logger for Alamofire
+   pod 'AlamofireNetworkLogger', '~> 0.0.2'
+   - Homepage: https://github.com/Dwarven/AlamofireNetworkLogger
+   - Source:   https://github.com/Dwarven/AlamofireNetworkLogger.git
+   - Versions: 0.0.2, 0.0.1 [master repo]
+
+-> AlamofireOauth2 (2.0.1)
+   Oauth2 implementation using Alamofire
+   pod 'AlamofireOauth2', '~> 2.0.1'
+   - Homepage: https://github.com/evermeer/AlamofireOauth2
+   - Source:   https://github.com/evermeer/SwiftOauth2.git
+   - Versions: 2.0.1, 2.0.0, 1.2.1, 1.2.0, 1.1.2, 1.0.2, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireObjectMapper (4.1.0)
+   An extension to Alamofire which automatically converts JSON response data into swift objects using ObjectMapper
+   pod 'AlamofireObjectMapper', '~> 4.1.0'
+   - Homepage: https://github.com/tristanhimmelman/AlamofireObjectMapper
+   - Source:   https://github.com/tristanhimmelman/AlamofireObjectMapper.git
+   - Versions: 4.1.0, 4.0.2, 4.0.1, 4.0.0, 3.0.2, 3.0.0, 2.1.2, 2.1.0, 2.0.2, 2.0.1, 2.0.0, 1.1.0, 1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.2, 0.1 [master repo]
+
+-> AlamofireReactive (2.0.0)
+   Reactive extensions for Alamofire framework.
+   pod 'AlamofireReactive', '~> 2.0.0'
+   - Homepage: https://github.com/ReactiveKit/ReactiveAlamofire
+   - Source:   https://github.com/ReactiveKit/ReactiveAlamofire.git
+   - Versions: 2.0.0, 1.1.0, 1.0.2, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireReactiveExtensions (1.0.3)
+   Extensions that mix ReactiveSwift with Alamofire
+   pod 'AlamofireReactiveExtensions', '~> 1.0.3'
+   - Homepage: https://github.com/gkaimakas/AlamofireReactiveExtensions
+   - Source:   https://github.com/gkaimakas/AlamofireReactiveExtensions.git
+   - Versions: 1.0.3, 1.0.2, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireRequestConfigurable (1.1.0)
+   Alamofire Request Configurable
+   pod 'AlamofireRequestConfigurable', '~> 1.1.0'
+   - Homepage: https://futao.me/
+   - Source:   https://github.com/Ftkey/AlamofireRequestConfigurable.git
+   - Versions: 1.1.0, 1.0.1, 1.0.0 [master repo]
+
+-> AlamofireRouter (1.0.0)
+   Simple Alamofire router.
+   pod 'AlamofireRouter', '~> 1.0.0'
+   - Homepage: https://github.com/CorlaOnline/AlamofireRouter
+   - Source:   https://github.com/CorlaOnline/AlamofireRouter.git
+   - Versions: 1.0.0, 0.1.0, 0.0.7, 0.0.6, 0.0.5, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> AlamofireRSSParser (2.0.0)
+   An RSS parser response handler for Alamofire
+   pod 'AlamofireRSSParser', '~> 2.0.0'
+   - Homepage: https://github.com/AdeptusAstartes/AlamofireRSSParser
+   - Source:   https://github.com/AdeptusAstartes/AlamofireRSSParser.git
+   - Versions: 2.0.0, 1.0.7, 1.0.5, 1.0.4, 1.0.2, 1.0.1, 1.0.0, 0.2.0, 0.1.0 [master repo]
+
+-> AlamofireSpinner (0.2.0) [DEPRECATED in favor of AlamofireNetworkActivityIndicator]
+   Tiny Alamofire plugin that starts and stops the network activity indicator.
+   pod 'AlamofireSpinner', '~> 0.2.0'
+   - Homepage: https://github.com/dclelland/AlamofireSpinner
+   - Source:   https://github.com/dclelland/AlamofireSpinner.git
+   - Versions: 0.2.0, 0.1.1, 0.1.0 [master repo]
+
+-> AlamofireSwiftyJSON (0.2.0)
+   Alamofire extension for serialize NSData to SwiftyJSON
+   pod 'AlamofireSwiftyJSON', '~> 0.2.0'
+   - Homepage: https://github.com/starboychina/AlamofireSwiftyJSON
+   - Source:   https://github.com/starboychina/AlamofireSwiftyJSON.git
+   - Versions: 0.2.0, 0.1.1, 0.1.0 [master repo]
+
+-> AlamofireUIManager (1.0.0)
+   A simple manager for Alamofire requests
+   pod 'AlamofireUIManager', '~> 1.0.0'
+   - Homepage: https://github.com/CorlaOnline/AlamofireUIManager
+   - Source:   https://github.com/CorlaOnline/AlamofireUIManager.git
+   - Versions: 1.0.0, 0.1.2, 0.1.1, 0.1.0, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> AlamofireUnbox (1.1.1)
+   An Alamofire extension which converts json response data into swift objects using Unbox
+   pod 'AlamofireUnbox', '~> 1.1.1'
+   - Homepage: https://github.com/maxsokolov/AlamofireUnbox
+   - Source:   https://github.com/maxsokolov/AlamofireUnbox.git
+   - Versions: 1.1.1, 1.1.0, 1.0.0 [master repo]
+
+-> AlamofireURLRequestConfigurable (1.1.1)
+   URLRequestConfigurable for Alamofire - Even cleaner type safe routing
+   pod 'AlamofireURLRequestConfigurable', '~> 1.1.1'
+   - Homepage: https://github.com/gmarm/AlamofireURLRequestConfigurable
+   - Source:   https://github.com/gmarm/AlamofireURLRequestConfigurable.git
+   - Versions: 1.1.1, 1.1, 1.0.1, 1.0 [master repo]
+
+-> AlamofireXMLRPC (2.1.0)
+   AlamofireXMLRPC brings XMLRPC functionalities to Alamofire.
+   pod 'AlamofireXMLRPC', '~> 2.1.0'
+   - Homepage: https://github.com/kodlian/AlamofireXMLRPC
+   - Source:   https://github.com/kodlian/AlamofireXMLRPC.git
+   - Versions: 2.1.0, 2.0.0, 1.0.0 [master repo]
+
+-> AlamofireXmlToObjects (2.1.0)
+   An Alamofire extension which converts XML response data into swift objects using EVReflection and XMLDictionary
+   pod 'AlamofireXmlToObjects', '~> 2.1.0'
+   - Homepage: https://github.com/evermeer/AlamofireXmlToObjects
+   - Source:   https://github.com/evermeer/AlamofireXmlToObjects.git
+   - Versions: 2.1.0, 1.2.0, 1.1.0, 1.0.1 [master repo]
+
+-> NAlamofire (2.0.17)
+   NAlamofire is wrapper of Alamofire - it makes use Alamofire easiest way.
+   pod 'NAlamofire', '~> 2.0.17'
+   - Homepage: http://cornerteam.com
+   - Source:   https://github.com/nghiaphunguyen/NAlamofire
+   - Versions: 2.0.17, 2.0.15, 2.0.14, 2.0.13, 2.0.12, 2.0.11, 2.0.8, 2.0.7, 1.9.9, 1.9.7, 1.9.5, 0.5.9, 0.5.8, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5, 0.4, 0.3, 0.2, 0.1 [master repo]
+
+-> TAlamofireCustom (0.1.3)
+   TAlamofire is network manager
+   pod 'TAlamofireCustom', '~> 0.1.3'
+   - Homepage: https://github.com/thienpham234/TAlamofireCustom
+   - Source:   https://github.com/thienpham234/TAlamofireCustom.git
+   - Versions: 0.1.3, 0.1.2, 0.1.0 [master repo]
+
+-> HMAlamofire (3.3.2)
+   Elegant HTTP Networking in Swift
+   pod 'HMAlamofire', '~> 3.3.2'
+   - Homepage: https://github.com/Holmusk/Alamofire
+   - Source:   https://github.com/Holmusk/Alamofire.git
+   - Versions: 3.3.2 [master repo]
+
+-> RxAlamofire (3.0.2)
+   RxSwift wrapper around the elegant HTTP networking in Swift Alamofire
+   pod 'RxAlamofire', '~> 3.0.2'
+   - Homepage: https://github.com/RxSwiftCommunity/RxAlamofire
+   - Source:   https://github.com/RxSwiftCommunity/RxAlamofire.git
+   - Versions: 3.0.2, 3.0.0, 3.0.0-rc.1, 3.0.0-beta.1, 2.5, 2.4, 2.2, 1.2, 1.1.1, 1.0, 0.3.3, 0.3.2, 0.3.1, 0.3, 0.2, 0.1 [master repo]
+   - Subspecs:
+     - RxAlamofire/Core (3.0.2)
+     - RxAlamofire/RxCocoa (3.0.2)
+
+-> RACAlamofire (0.0.6)
+   ReactiveCocoa extensions for Alamofire
+   pod 'RACAlamofire', '~> 0.0.6'
+   - Homepage: https://github.com/ararog/Alamofire-RACExtensions
+   - Source:   https://github.com/ararog/Alamofire-RACExtensions.git
+   - Versions: 0.0.6 [master repo]
+
+-> Nuke-Alamofire-Plugin (2.0)
+   Alamofire plugin for Nuke - image loading and caching framework
+   pod 'Nuke-Alamofire-Plugin', '~> 2.0'
+   - Homepage: https://github.com/kean/Nuke-Alamofire-Plugin
+   - Source:   https://github.com/kean/Nuke-Alamofire-Plugin.git
+   - Versions: 2.0, 1.0.1, 1.0, 0.6.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.0 [master repo]
+
+-> UnboxedAlamofire (2.0.3)
+   Alamofire + Unbox: the easiest way to download and decode JSON into swift objects.
+   pod 'UnboxedAlamofire', '~> 2.0.3'
+   - Homepage: https://github.com/serejahh/UnboxedAlamofire
+   - Source:   https://github.com/serejahh/UnboxedAlamofire.git
+   - Versions: 2.0.3, 2.0.2, 2.0.1, 2.0, 1.0.1, 1.0 [master repo]
+
+-> ReactiveAlamofire (2.0.0)
+   Alamofire 3 integration for ReactiveCocoa 4
+   pod 'ReactiveAlamofire', '~> 2.0.0'
+   - Homepage: https://github.com/envoy/ReactiveAlamofire
+   - Source:   https://github.com/envoy/ReactiveAlamofire.git
+   - Versions: 2.0.0, 1.0.0, 1.0.0-alpha.2 [master repo]
+
+-> LionheartAlamofireClient (2.1.2)
+   A simple class that helps manage interaction with remote APIs using Alamofire.
+   pod 'LionheartAlamofireClient', '~> 2.1.2'
+   - Homepage: https://github.com/lionheart/LionheartAlamofireClient
+   - Source:   https://github.com/lionheart/LionheartAlamofireClient.git
+   - Versions: 2.1.2, 2.1.1, 2.0.6, 2.0.5, 2.0.4, 2.0.2, 1.3.7, 1.3.5, 1.3.4, 1.3.2, 1.3.0, 1.0.0 [master repo]
+
+-> OAuthSwiftAlamofire (0.1.0)
+   Sign Alamofire request with OAuthSwift
+   pod 'OAuthSwiftAlamofire', '~> 0.1.0'
+   - Homepage: https://github.com/OAuthSwift/OAuthSwiftAlamofire
+   - Source:   https://github.com/OAuthSwift/OAuthSwiftAlamofire.git
+   - Versions: 0.1.0 [master repo]
+
+-> AlamoArgo (0.5.3)
+   REST object mapping with Alamofire and Argo. The easy way.
+   pod 'AlamoArgo', '~> 0.5.3'
+   - Homepage: https://github.com/gchiacchio/AlamoArgo
+   - Source:   https://github.com/gchiacchio/AlamoArgo.git
+   - Versions: 0.5.3, 0.5.1, 0.5.0, 0.3.0, 0.2.3, 0.2.1, 0.2.0 [master repo]
+
+-> AlamoFuzi (1.0.4)
+   XML/HTML response handlers for Alamofire using Fuzi
+   pod 'AlamoFuzi', '~> 1.0.4'
+   - Homepage: https://github.com/thebluepotato/AlamoFuzi
+   - Source:   https://github.com/thebluepotato/AlamoFuzi.git
+   - Versions: 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0 [master repo]
+
+-> AlamoImage (0.3.7) [DEPRECATED in favor of AlamofireImage]
+   Image downloading with Alamofire
+   pod 'AlamoImage', '~> 0.3.7'
+   - Homepage: https://github.com/gchiacchio/AlamoImage
+   - Source:   https://github.com/gchiacchio/AlamoImage.git
+   - Versions: 0.3.7, 0.3.0, 0.2.1, 0.2.0, 0.1.3, 0.1.2, 0.1.1, 0.1.0 [master repo]
+   - Subspecs:
+     - AlamoImage/Common (0.3.7)
+     - AlamoImage/Core (0.3.7)
+     - AlamoImage/ImageView (0.3.7)
+
+-> AmazonS3RequestManager (1.1.2)
+   A Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution). Based on AFAmazonS3Manager
+   pod 'AmazonS3RequestManager', '~> 1.1.2'
+   - Homepage: https://github.com/AnthonyMDev/AmazonS3RequestManager
+   - Source:   https://github.com/AnthonyMDev/AmazonS3RequestManager.git
+   - Versions: 1.1.2, 1.1.1, 1.1.0, 1.0.5, 1.0.4, 1.0.3, 1.0.2, 1.0.1, 1.0.0, 1.0.0-swift2-3, 0.13.0, 0.12.0, 0.11.0, 0.10.2, 0.10.1, 0.10.0, 0.9.1, 0.9.0, 0.8.1, 0.8.0, 0.7.0, 0.7.0-beta.2, 0.7.0-beta.1, 0.6.0, 0.5.1, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.0 [master repo]
+
+-> AmazonS3RequestManagerDomain (0.12.4)
+   A Alamofire based request manager that serializes requests to the AWS S3 (Amazon Simple Storage Solution). Based on AFAmazonS3Manager
+   pod 'AmazonS3RequestManagerDomain', '~> 0.12.4'
+   - Homepage: https://github.com/tonyli508/AmazonS3RequestManager.git
+   - Source:   https://github.com/tonyli508/AmazonS3RequestManager.git
+   - Versions: 0.12.4 [master repo]
+
+-> AnyAPI (0.1.0)
+   AnyAPI lets you easily interface with any HTTP API on the internet
+   pod 'AnyAPI', '~> 0.1.0'
+   - Homepage: https://github.com/jpmcglone/AnyAPI
+   - Source:   https://github.com/jpmcglone/AnyAPI.git
+   - Versions: 0.1.0 [master repo]
+
+-> API (0.1.1)
+   An AFNetworking wrapper for easy API creation
+   pod 'API', '~> 0.1.1'
+   - Homepage: https://github.com/andrewboryk/API
+   - Source:   https://github.com/andrewboryk/API.git
+   - Versions: 0.1.1, 0.1.0 [master repo]
+
+-> ARORequest (0.1.0)
+   Alamofire + RxSwift + ObjectMapper
+   pod 'ARORequest', '~> 0.1.0'
+   - Homepage: https://github.com/taka0125/ARORequest
+   - Source:   https://github.com/taka0125/ARORequest.git
+   - Versions: 0.1.0 [master repo]
+
+-> Bluebonnet (0.4.0)
+   A simple and type safe API client using Alamofire + SwiftTask.
+   pod 'Bluebonnet', '~> 0.4.0'
+   - Homepage: https://github.com/yatatsu/Bluebonnet
+   - Source:   https://github.com/yatatsu/Bluebonnet.git
+   - Versions: 0.4.0, 0.2.0 [master repo]
+
+-> BmoImageLoader (1.0.1)
+   A progress animated component for UIImageView
+   pod 'BmoImageLoader', '~> 1.0.1'
+   - Homepage: https://github.com/tzef/BmoImageLoader
+   - Source:   https://github.com/tzef/BmoImageLoader.git
+   - Versions: 1.0.1, 0.4.0, 0.3.0 [master repo]
+
+-> BrickRequest (0.5.0)
+   BrickRequest is a helper library for Alamofire
+   pod 'BrickRequest', '~> 0.5.0'
+   - Homepage: https://github.com/muukii/BrickRequest
+   - Source:   https://github.com/muukii/BrickRequest.git
+   - Versions: 0.5.0, 0.4.0, 0.3.0, 0.2.1, 0.2.0 [master repo]
+
+-> CHRequest (0.1.5)
+   Network framework base on Alamofire in Swift
+   pod 'CHRequest', '~> 0.1.5'
+   - Homepage: https://github.com/chausson/CHRequest
+   - Source:   https://github.com/chausson/CHRequest.git
+   - Versions: 0.1.5, 0.1.4, 0.1.3, 0.1.0 [master repo]
+
+-> ClientSideCacaheControl (0.1.1) [DEPRECATED in favor of SSCacheControl]
+   Client-Side Cache-Control Extension base on Alamofire and SwiftyJSON.
+   pod 'ClientSideCacaheControl', '~> 0.1.1'
+   - Homepage: https://github.com/CodeEagle/ClientSideCacaheControl
+   - Source:   https://github.com/CodeEagle/ClientSideCacaheControl.git
+   - Versions: 0.1.1, 0.1.0 [master repo]
+
+-> clubhouse-ios-api (0.1.0)
+   A native Swift API Wrapper for Clubhouse.io
+   pod 'clubhouse-ios-api', '~> 0.1.0'
+   - Homepage: https://github.com/altyus/clubhouse-ios-api
+   - Source:   https://github.com/altyus/clubhouse-ios-api.git
+   - Versions: 0.1.0 [master repo]
+
+-> CRUDE-Futures (0.1.28)
+   Easily Create, Read, Update, Delete and Enumerate objects with the help of Alamofire, SwiftyJSON, and BrightFutures.
+   pod 'CRUDE-Futures', '~> 0.1.28'
+   - Homepage: https://github.com/JasonCanCode/CRUDE-Futures
+   - Source:   https://github.com/JasonCanCode/CRUDE-Futures.git
+   - Versions: 0.1.28, 0.1.27, 0.1.26, 0.1.25, 0.1.23 [master repo]
+
+-> DGTAsync (1.1.1)
+   DGTAsync utilities for Swift
+   pod 'DGTAsync', '~> 1.1.1'
+   - Homepage: https://github.com/0angelic0/DGTAsync
+   - Source:   https://github.com/0angelic0/DGTAsync.git
+   - Versions: 1.1.1, 1.1.0, 1.0.0 [master repo]
+
+-> EVReflection (4.9.1)
+   Reflection based (dictionary, JSON or XML) object mapping (including extensions for Alamofire and Moya with RxSwift or ReactiveSwift)
+   pod 'EVReflection', '~> 4.9.1'
+   - Homepage: https://github.com/evermeer/EVReflection
+   - Source:   https://github.com/evermeer/EVReflection.git
+   - Versions: 4.9.1, 4.8.3, 4.8.2, 4.8.1, 4.8.0, 4.7.0, 4.6.0, 4.5.1, 4.5.0, 4.4.1, 4.4.0, 4.3.3, 4.3.1, 4.3.0, 4.2.0, 4.1.0, 4.0.10, 4.0.8, 4.0.7, 4.0.1, 3.7.0, 3.6.0, 3.5.2, 3.5.1, 3.5.0, 3.4.2, 3.4.1, 3.4.0, 3.3.5, 3.3.4, 3.3.3, 3.3.2, 3.3.1, 3.3.0, 3.2.2, 3.2.1, 3.2.0, 3.1.4, 3.1.3, 3.1.2, 2.46.0, 2.45.1, 2.45.0, 2.44.0, 2.43.0, 2.42.2, 2.41.0, 2.40.0, 2.39.1, 2.39.0, 2.38.3, 2.38.2, 2.38.1, 2.38.0, 2.37.0, 2.36.0, 2.35.0, 2.34.0, 2.33.5, 2.33.4, 2.33.3, 2.33.2, 2.33.1, 2.33.0, 2.32.1, 2.32.0, 2.31.0, 2.30.1, 2.30.0, 2.29.0, 2.28.0, 2.27.0, 2.26.0, 2.25.0, 2.24.0, 2.23.0, 2.22.2, 2.22.1, 2.22.0, 2.21.0, 2.20.2, 2.20.1, 2.20.0, 2.19.2, 2.19.1, 2.19.0, 2.18.2, 2.18.1, 2.18.0, 2.17.0, 2.16.1, 2.15.6, 2.15.5, 2.15.4, 2.15.3, 2.15.2, 2.15.1, 2.15.0, 2.14.1, 2.14.0, 2.13.2, 2.13.1, 2.13.0, 2.12.3, 2.12.2, 2.12.1, 2.12.0, 2.11.3, 2.11.2, 2.11.1, 2.11.0, 2.10.0, 2.9.3, 2.9.1, 2.9.0, 2.8.2, 2.8.1, 2.8.0, 2.7.8, 2.7.7, 2.7.6, 2.7.5, 2.7.4, 2.7.3, 2.7.2, 2.7.0, 2.6.0, 2.5.4, 2.5.3, 2.5.2, 2.5.1, 2.5.0, 2.4.8, 2.4.7, 2.4.6, 2.4.5, 2.4.4, 2.4.3, 2.4.2, 2.4.1, 2.4.0, 2.3.2, 2.3.1, 2.3.0, 2.2.0, 2.1.0, 2.0.0, 1.5.1, 1.4.3, 1.4.2, 1.4.1, 1.4.0, 1.3.0, 1.2.2, 1.1.0, 1.0.0 [master repo]
+   - Subspecs:
+     - EVReflection/Core (4.9.1)
+     - EVReflection/XML (4.9.1)
+     - EVReflection/Realm (4.9.1)
+     - EVReflection/CloudKit (4.9.1)
+     - EVReflection/Alamofire (4.9.1)
+     - EVReflection/AlamofireXML (4.9.1)
+     - EVReflection/Moya (4.9.1)
+     - EVReflection/MoyaXML (4.9.1)
+     - EVReflection/MoyaRxSwift (4.9.1)
+     - EVReflection/MoyaRxSwiftXML (4.9.1)
+     - EVReflection/MoyaReactiveSwift (4.9.1)
+     - EVReflection/MoyaReactiveSwiftXML (4.9.1)
+
+-> FireRoutes (0.2.4)
+   A lightweight extension to Alamofire to simplify API calls.
+   pod 'FireRoutes', '~> 0.2.4'
+   - Homepage: https://github.com/johnpatrickmorgan/FireRoutes
+   - Source:   https://github.com/johnpatrickmorgan/FireRoutes.git
+   - Versions: 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0, 0.1.1 [master repo]
+
+-> HTZNetworkingManager (1.0)
+   Personal Alamofire built upon wrapper for faster CRUD API endpoint requests with *Result* closure callback for more succinct error handling.
+   pod 'HTZNetworkingManager', '~> 1.0'
+   - Homepage: https://github.com/toohotz/HotzNetworkingManager
+   - Source:   https://github.com/toohotz/HotzNetworkingManager.git
+   - Versions: 1.0 [master repo]
+
+-> ImageValet (2.2.4)
+   Delivers an image from a local or remote source to a `UIImageView` or  closure, using `AlamofireImage` for asynchronous requests.
+   pod 'ImageValet', '~> 2.2.4'
+   - Homepage: https://github.com/AnthonyMDev/ImageValet
+   - Source:   https://github.com/AnthonyMDev/ImageValet.git
+   - Versions: 2.2.4, 2.2.3, 2.2.2, 2.2.1, 2.1.1, 2.1.0, 2.0.0, 1.1.1, 1.1.0, 1.0.0 [master repo]
+
+-> IPServerUtility (0.2.1)
+   IPServerUtility is a elegant networking layer above Alamofire
+   pod 'IPServerUtility', '~> 0.2.1'
+   - Homepage: https://ipragmatechsols@bitbucket.org/ipragmatechsols/ipserverutility.git
+   - Source:   https://ipragmatechsols@bitbucket.org/ipragmatechsols/ipserverutility.git
+   - Versions: 0.2.1 [master repo]
+
+-> JauzziParser (1.0.0)
+   An RSS feed parser written in Swift 3.0.
+   pod 'JauzziParser', '~> 1.0.0'
+   - Homepage: https://github.com/fakerabbit/JauzziParser
+   - Source:   https://github.com/fakerabbit/JauzziParser.git
+   - Versions: 1.0.0, 0.8.0, 0.4.0, 0.3.0 [master repo]
+
+-> JHHttpClient (0.0.4)
+   A swift HttpClient lib.
+   pod 'JHHttpClient', '~> 0.0.4'
+   - Homepage: https://github.com/seraphjiang/JHHttpClient
+   - Source:   https://github.com/seraphjiang/JHHttpClient.git
+   - Versions: 0.0.4, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> JSONRouter (0.1.0)
+   Library to service routers.
+   pod 'JSONRouter', '~> 0.1.0'
+   - Homepage: https://github.com/caiobiodere/JSONRouter
+   - Source:   https://github.com/caiobiodere/JSONRouter.git
+   - Versions: 0.1.0 [master repo]
+
+-> KANetworking (0.3.1)
+   A network extension for Alamofire for faster DTO parsing.
+   pod 'KANetworking', '~> 0.3.1'
+   - Homepage: https://github.com/kadarandras/KANetworking
+   - Source:   https://github.com/kadarandras/KANetworking.git
+   - Versions: 0.3.1, 0.3.0, 0.2.0, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0 [master repo]
+
+-> LHNetworkBase (0.0.5)
+   A base networking layer built on top of Alamofire and SwiftyJSON.
+   pod 'LHNetworkBase', '~> 0.0.5'
+   - Homepage: https://qiita.com/vc7
+   - Source:   https://github.com/vc7/LHNetworkBase.git
+   - Versions: 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> LKAPI (1.2.3)
+   Wrapper around Alamofire
+   pod 'LKAPI', '~> 1.2.3'
+   - Homepage: https://github.com/Lightningkite/LKAPI
+   - Source:   https://github.com/Lightningkite/LKAPI.git
+   - Versions: 1.2.3, 1.2.2, 1.2.1, 1.2.0, 1.1.0, 1.0.2, 1.0.1, 1.0 [master repo]
+
+-> MBNetwork (0.4.0)
+   MBNetwork - Network request can be easier
+   pod 'MBNetwork', '~> 0.4.0'
+   - Homepage: https://github.com/mmoaay/MBNetwork
+   - Source:   https://github.com/mmoaay/MBNetwork.git
+   - Versions: 0.4.0, 0.3.0, 0.2.0, 0.1.0 [master repo]
+
+-> Moyaf (0.8.2)
+   Simple abstraction layer based on AFNetworking.
+   pod 'Moyaf', '~> 0.8.2'
+   - Homepage: https://github.com/skyofdwarf/Moyaf
+   - Source:   https://github.com/skyofdwarf/Moyaf.git
+   - Versions: 0.8.2 [master repo]
+
+-> NLService (0.3.0)
+   Network Layer Service.
+   pod 'NLService', '~> 0.3.0'
+   - Homepage: https://github.com/juancruzmdq/NLService
+   - Source:   https://github.com/juancruzmdq/NLService.git
+   - Versions: 0.3.0, 0.2.0, 0.1.0 [master repo]
+
+-> NRConnection (1.0.1)
+   NRConnection lets use the network layer in the simplest way. Send parameters,images and videos to server in a simplest way.
+   pod 'NRConnection', '~> 1.0.1'
+   - Homepage: https://github.com/naveenrana1309/NRConnection
+   - Source:   https://github.com/naveenrana1309/NRConnection.git
+   - Versions: 1.0.1, 1.0.0 [master repo]
+
+-> OctoAPI (0.1.9)
+   Octo is a JSON API abstraction layer built on top of Alamofire for your iOS projects written in Swift 3
+   pod 'OctoAPI', '~> 0.1.9'
+   - Homepage: http://ferus.info
+   - Source:   https://github.com/ferusinfo/OctoAPI.git
+   - Versions: 0.1.9, 0.1.8, 0.1.7, 0.1.6, 0.1.5, 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0, 0.0.9, 0.0.8, 0.0.7, 0.0.6, 0.0.5, 0.0.4, 0.0.3, 0.0.2, 0.0.1 [master repo]
+
+-> PokemonKit (2.0.1)
+   A wrapper for pokeapi v2
+   pod 'PokemonKit', '~> 2.0.1'
+   - Homepage: https://github.com/ContinuousLearning/PokemonKit
+   - Source:   https://github.com/ContinuousLearning/PokemonKit.git
+   - Versions: 2.0.1, 2.0.0, 1.0.2, 1.0.1, 1.0.0 [master repo]
+
+-> Promissum (1.0.0)
+   A promises library written in Swift featuring combinators like map, flatMap, whenAll, whenAny.
+   pod 'Promissum', '~> 1.0.0'
+   - Homepage: https://github.com/tomlokhorst/Promissum
+   - Source:   https://github.com/tomlokhorst/Promissum.git
+   - Versions: 1.0.0, 0.5.0, 0.4.0, 0.3.0, 0.2.4, 0.2.3, 0.2.2, 0.2.1 [master repo]
+   - Subspecs:
+     - Promissum/Core (1.0.0)
+     - Promissum/Alamofire (1.0.0)
+     - Promissum/CoreDataKit (1.0.0)
+     - Promissum/UIKit (1.0.0)
+
+-> PutioKit (1.0.0)
+   A Swift framework for Put.io's API
+   pod 'PutioKit', '~> 1.0.0'
+   - Homepage: https://github.com/TryFetch/PutioKit
+   - Source:   https://github.com/TryFetch/PutioKit.git
+   - Versions: 1.0.0 [master repo]
+
+-> Raccoon (1.0.0)
+   Puts together Alamofire, CoreData and PromiseKit
+   pod 'Raccoon', '~> 1.0.0'
+   - Homepage: https://github.com/ManueGE/Raccoon/
+   - Source:   https://github.com/ManueGE/Raccoon.git
+   - Versions: 1.0.0, 0.2.0, 0.1.1, 0.1.0 [master repo]
+
+-> Reactofire (0.3.0)
+   Reactofire is a protocol oriented networking library in swift
+   pod 'Reactofire', '~> 0.3.0'
+   - Homepage: https://github.com/RahulKatariya/Reactofire
+   - Source:   https://github.com/RahulKatariya/Reactofire.git
+   - Versions: 0.3.0 [master repo]
+
+-> Reqres (2.0.0)
+   Simple network activity logger
+   pod 'Reqres', '~> 2.0.0'
+   - Homepage: https://github.com/AckeeCZ/Reqres
+   - Source:   https://github.com/AckeeCZ/Reqres.git
+   - Versions: 2.0.0, 1.2.0 [master repo]
+
+-> RESTClient-iOS (0.1.2)
+   RESTClient is a lightweight wrapper for Alamofire requests that works with JSON responses
+   pod 'RESTClient-iOS', '~> 0.1.2'
+   - Homepage: https://github.com/Streetmage/RESTClient
+   - Source:   https://github.com/Streetmage/RESTClient.git
+   - Versions: 0.1.2, 0.1.1, 0.1.0 [master repo]
+
+-> RestFire (0.0.1)
+   A simple REST wrapper based on Alamofire.
+   pod 'RestFire', '~> 0.0.1'
+   - Homepage: https://github.com/OlafAndreas/RestFire
+   - Source:   https://github.com/OlafAndreas/RestFire.git
+   - Versions: 0.0.1 [master repo]
+
+-> Restofire (2.2.0)
+   Restofire is a protocol oriented networking abstraction layer in swift
+   pod 'Restofire', '~> 2.2.0'
+   - Homepage: https://github.com/Restofire/Restofire
+   - Source:   https://github.com/Restofire/Restofire.git
+   - Versions: 2.2.0, 2.1.0, 2.0.0, 2.0.0.beta.2, 2.0.0.beta.1, 1.1.0, 1.0.0, 0.9.0, 0.8.2, 0.8.1, 0.8.0, 0.7.0, 0.6.0, 0.5.0, 0.4.0 [master repo]
+   - Subspecs:
+     - Restofire/Core (2.2.0)
+
+-> RESTRequest (0.4.1)
+   Reference implementation of BrickRequest for accessing REST APIs
+   pod 'RESTRequest', '~> 0.4.1'
+   - Homepage: https://github.com/muukii/RESTRequest
+   - Source:   https://github.com/muukii/RESTRequest.git
+   - Versions: 0.4.1, 0.4.0, 0.3.1, 0.3.0, 0.2.0, 0.1.0 [master repo]
+
+-> RestShip (0.2.2)
+   RestShip is a library for let you easily work with RESTFull Web Applications, sitting on top of Alamofire
+   pod 'RestShip', '~> 0.2.2'
+   - Homepage: https://github.com/SwiftShip/RestShip
+   - Source:   https://github.com/SwiftShip/RestShip.git
+   - Versions: 0.2.2, 0.2.1, 0.2.0, 0.1.0 [master repo]
+
+-> Retrolux (0.6.1)
+   An all in one networking solution, like Retrofit.
+   pod 'Retrolux', '~> 0.6.1'
+   - Homepage: https://github.com/izeni-team/retrolux
+   - Source:   https://github.com/izeni-team/retrolux.git
+   - Versions: 0.6.1, 0.6.0, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.2 [master repo]
+
+-> RTWebService (0.2.4)
+   Elegant library to connect with server through REST, SOAP, FTP, SSH
+   pod 'RTWebService', '~> 0.2.4'
+   - Homepage: https://github.com/tigerraj32/RTWebService
+   - Source:   https://github.com/tigerraj32/RTWebService.git
+   - Versions: 0.2.4, 0.2.0-beta, 0.1.1, 0.1.0 [master repo]
+
+-> Serpent (1.0.5)
+   A protocol to serialize Swift structs and classes for encoding and decoding.
+   pod 'Serpent', '~> 1.0.5'
+   - Homepage: https://github.com/nodes-ios/Serpent
+   - Source:   https://github.com/nodes-ios/Serpent.git
+   - Versions: 1.0.5, 1.0.1 [master repo]
+   - Subspecs:
+     - Serpent/Core (1.0.5)
+     - Serpent/Extensions (1.0.5)
+     - Serpent/AlamofireExtension (1.0.5)
+     - Serpent/CashierExtension (1.0.5)
+
+-> Siesta (1.1.1)
+   Swift REST client library
+   pod 'Siesta', '~> 1.1.1'
+   - Homepage: http://bustoutsolutions.github.io/siesta/
+   - Source:   https://github.com/bustoutsolutions/siesta.git
+   - Versions: 1.1.1, 1.1.0, 1.0.1, 1.0.0, 1.0-rc.3, 1.0-rc.2, 1.0-rc.1, 1.0-rc.0, 1.0-beta.10, 1.0-beta.9, 1.0-beta.8a, 1.0-beta.8, 1.0-beta.7, 1.0-beta.6, 1.0-beta.5, 1.0-beta.4, 1.0-beta.3, 1.0-beta.2, 1.0-beta.1 [master repo]
+   - Subspecs:
+     - Siesta/Core (1.1.1)
+     - Siesta/UI (1.1.1)
+     - Siesta/Alamofire (1.1.1)
+
+-> SignalRSwift (1.0.1)
+   A SignalR client library for iOS written in Swift
+   pod 'SignalRSwift', '~> 1.0.1'
+   - Homepage: https://github.com/AutosoftDMS/SignalR-Swift
+   - Source:   https://github.com/AutosoftDMS/SignalR-Swift.git
+   - Versions: 1.0.1, 1.0 [master repo]
+
+-> Simpler (0.2.0)
+   Network framework base on Alamofire in Swift
+   pod 'Simpler', '~> 0.2.0'
+   - Homepage: https://github.com/chausson/Simpler
+   - Source:   https://github.com/chausson/Simpler.git
+   - Versions: 0.2.0, 0.1.0 [master repo]
+
+-> SSCacheControl (0.1.4)
+   Client-Side Cache-Control Extension base on Alamofire and SwiftyJSON.
+   pod 'SSCacheControl', '~> 0.1.4'
+   - Homepage: https://github.com/CodeEagle/SSCacheControl
+   - Source:   https://github.com/CodeEagle/SSCacheControl.git
+   - Versions: 0.1.4, 0.1.3, 0.1.2, 0.1.1, 0.1.0 [master repo]
+   - Subspecs:
+     - SSCacheControl/Default (0.1.4)
+     - SSCacheControl/SwiftyJSON (0.1.4)
+
+-> SwiftCache (0.0.1)
+   A wonderfully lightweight cache for Swift
+   pod 'SwiftCache', '~> 0.0.1'
+   - Homepage: https://github.com/bih/SwiftCache
+   - Source:   https://github.com/bih/SwiftCache.git
+   - Versions: 0.0.1 [master repo]
+
+-> SwiftDailyAPI (2.0.1)
+   A Swift API framework for ZhiHu's Daily News.
+   pod 'SwiftDailyAPI', '~> 2.0.1'
+   - Homepage: https://github.com/NicholasTD07/SwiftDailyAPI
+   - Source:   https://github.com/NicholasTD07/SwiftDailyAPI.git
+   - Versions: 2.0.1 [master repo]
+
+-> SwiftJSONRPC (0.2.0)
+   Swift JSON-RPC client based on Alamofire
+   pod 'SwiftJSONRPC', '~> 0.2.0'
+   - Homepage: https://github.com/kolyasev/SwiftJSONRPC
+   - Source:   https://github.com/kolyasev/SwiftJSONRPC.git
+   - Versions: 0.2.0, 0.1.1 [master repo]
+
+-> SYNetworking (1.0)
+   SYNetworking is is a high level request util based on Alamofire.
+   pod 'SYNetworking', '~> 1.0'
+   - Homepage: https://github.com/Shannon-Yang/SYNetworking
+   - Source:   https://github.com/Shannon-Yang/SYNetworking.git
+   - Versions: 1.0 [master repo]
+
+-> TRON (3.0.1)
+   Lightweight network abstraction layer, written on top of Alamofire
+   pod 'TRON', '~> 3.0.1'
+   - Homepage: https://github.com/MLSDev/TRON
+   - Source:   https://github.com/MLSDev/TRON.git
+   - Versions: 3.0.1, 3.0.0, 2.0.1, 2.0.0, 2.0.0-beta.5, 2.0.0-beta.4, 2.0.0-beta.3, 2.0.0-beta.2, 2.0.0-beta.1, 1.2.1, 1.1.1, 1.1.0, 1.0.0, 1.0.0-beta.3, 1.0.0-beta.2, 1.0.0-beta.1, 0.4.3, 0.4.2, 0.4.1, 0.4.0, 0.3.0, 0.2.1, 0.2.0, 0.1.2, 0.1.1, 0.1.0 [master repo]
+   - Subspecs:
+     - TRON/Core (3.0.1)
+     - TRON/SwiftyJSON (3.0.1)
+     - TRON/RxSwift (3.0.1)
+
+-> Wolf (2.1.5)
+   An opinionated, protocol-oriented networking layer.
+   pod 'Wolf', '~> 2.1.5'
+   - Homepage: https://github.com/fellipecaetano/Wolf
+   - Source:   https://github.com/fellipecaetano/Wolf.git
+   - Versions: 2.1.5, 2.1.3, 2.1.2, 2.0.0, 1.1.0, 1.0.0, 0.8.2, 0.8.1, 0.7.0, 0.5.0, 0.4.0, 0.3.0, 0.2.0, 0.1.0 [master repo]
+   - Subspecs:
+     - Wolf/Basic (2.1.5)
+     - Wolf/Unbox (2.1.5)
+
+-> XYCNetwork (0.0.7)
+   a network framework similar to YTKNetwork,and Using Swift
+   pod 'XYCNetwork', '~> 0.0.7'
+   - Homepage: https://github.com/TomasEdison/XYCNetwork.git
+   - Source:   https://github.com/TomasEdison/XYCNetwork.git
+   - Versions: 0.0.7, 0.0.6, 0.0.5, 0.0.3, 0.0.2 [master repo]
+
+-> YTNetwork (1.0)
+   YTNetwork is is a high level request util based on Alamofire.It provides a High Level API for network request.Inspired by YTKNetwork
+   pod 'YTNetwork', '~> 1.0'
+   - Homepage: https://github.com/Shannon-Yang/YTNetwork
+   - Source:   https://github.com/Shannon-Yang/YTNetwork.git
+   - Versions: 1.0 [master repo]
+
+-> ZipCodeAPISearch (0.1.0)
+   ZipCodeAPISearch returns location for a zip code using the ZipCodeAPI.
+   pod 'ZipCodeAPISearch', '~> 0.1.0'
+   - Homepage: https://github.com/lpollard11/ZipCodeAPISearch.git
+   - Source:   https://github.com/lpollard11/ZipCodeAPISearch.git
+   - Versions: 0.1.0 [master repo]
