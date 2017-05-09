@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Alamofire
 
 class DetailViewController: UIViewController {
     var movie:Movie?
@@ -28,11 +27,12 @@ class DetailViewController: UIViewController {
         
         if let pic = movie?.picture {
             let url = URL(string: "http://image.tmdb.org/t/p/w185/" + pic)
-            Alamofire.request(url!, method: .get).responseData { dataRequest in
+           
+            MovieNetwork.shared.getImage(url: url!, completion: { data in
                 DispatchQueue.main.async{
-                    self.imageView.image = UIImage(data: dataRequest.data!)
+                    self.imageView.image = UIImage(data: data)
                 }
-            }
+            })
            
         }else{
             imageView.image = #imageLiteral(resourceName: "brokenImage")

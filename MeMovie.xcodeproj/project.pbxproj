@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00F2415B53F0BB2F779E51EE /* Pods_MeMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AE3283C25224A961AC9F94F /* Pods_MeMovie.framework */; };
+		8156970A1EC1225100EF9891 /* MovieNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815697091EC1225100EF9891 /* MovieNetwork.swift */; };
 		8158EC261EBEA9EB00BF97D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC251EBEA9EB00BF97D7 /* AppDelegate.swift */; };
 		8158EC281EBEA9EB00BF97D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158EC271EBEA9EB00BF97D7 /* ViewController.swift */; };
 		8158EC2B1EBEA9EC00BF97D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8158EC291EBEA9EC00BF97D7 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		3AE3283C25224A961AC9F94F /* Pods_MeMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BEEF98CB40B9BDB6EBA759 /* Pods-MeMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-MeMovie/Pods-MeMovie.release.xcconfig"; sourceTree = "<group>"; };
+		815697091EC1225100EF9891 /* MovieNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieNetwork.swift; sourceTree = "<group>"; };
 		8158EC221EBEA9EA00BF97D7 /* MeMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8158EC251EBEA9EB00BF97D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8158EC271EBEA9EB00BF97D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				8158EC371EBF999E00BF97D7 /* Movie.swift */,
 				8158EC391EC03F8B00BF97D7 /* DetailViewController.swift */,
 				8158EC3A1EC03F8B00BF97D7 /* DetailViewController.xib */,
+				815697091EC1225100EF9891 /* MovieNetwork.swift */,
 			);
 			path = MeMovie;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8156970A1EC1225100EF9891 /* MovieNetwork.swift in Sources */,
 				8158EC281EBEA9EB00BF97D7 /* ViewController.swift in Sources */,
 				8158EC261EBEA9EB00BF97D7 /* AppDelegate.swift in Sources */,
 				8158EC381EBF999E00BF97D7 /* Movie.swift in Sources */,

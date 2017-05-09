@@ -9,8 +9,6 @@
 import UIKit
 import RxSwift
 import RxCocoa
-import Alamofire
-import RxAlamofire
 
 class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate{
     
@@ -25,9 +23,14 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         self.searchBar.delegate = self
+        
+        //searchButton similar to submit
         self.searchBar.rx.searchButtonClicked.bind(onNext:{
-        self.searchBar.resignFirstResponder()
+            self.page = 1
+            self.loadButton.isHidden = false
+            self.searchBar.resignFirstResponder()
             self.searchByText(text: self.searchBar.text!)
+            self.prevSearchString = self.searchBar.text!
         }).disposed(by: disposeBag)
         
         //button tap
@@ -37,14 +40,15 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
                 self.loadButton.isHidden = false
                 self.searchBar.resignFirstResponder()
                 self.searchByText(text: self.searchBar.text!)
+                self.prevSearchString = self.searchBar.text!
             }).disposed(by: disposeBag)
         
         //load the next page
         loadButton.rx.tap
             .bind(onNext:{
-                self.validateSearchString()
+                self.page = self.page + 1
                 self.searchBar.resignFirstResponder()
-                self.loadMoreItems(text: self.searchBar.text!)
+                self.loadMoreItems()
             }).disposed(by: disposeBag)
         
         //equivalent to cell for row at
@@ -64,15 +68,6 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    func validateSearchString(){
-        if prevSearchString == searchBar.text{
-            page = page + 1
-        }else{
-            page = 1
-            prevSearchString = searchBar.text!
-            loadButton.isHidden = false
-        }
-    }
     /**
      Parses text replacing adjacent spaces with '+' then makes network call
         - Used to to search for new keywords.
@@ -84,70 +79,40 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
         let regex:NSRegularExpression = try! NSRegularExpression(pattern: "\\s+", options: [])
         regex.replaceMatches(in: searchString, options: NSRegularExpression.MatchingOptions.reportCompletion, range: NSMakeRange(0, searchString.length), withTemplate:"+$1")
         let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(searchString.description)&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
-        //Making network call
-        json(.get, stringURL)
-            .map{ self.parse(json: $0 as AnyObject?)}
-            .observeOn(MainScheduler.instance)
-            .subscribe( onNext: {
-                    self.movies.value = $0
-                    self.tableView.reloadData()
-                }
-            )
-            .disposed(by: disposeBag)
+        let url = URL(string: stringURL)
+        MovieNetwork.shared.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
+            self.movies.value =  moviesData
+            self.loadButton.isHidden = false
+            self.tableView.reloadData()
+        }
     }
     /**
         Parses text replacing adjacent spaces with '+' then makes network call
             -Used to get the next page of already queried service call
      */
-    func loadMoreItems(text:String){
+    func loadMoreItems(){
         //converting adjacent spaces into single + for the URL
-        let searchString = NSMutableString(string: text)
+        let searchString = NSMutableString(string: prevSearchString)
         searchString.setString(searchString.trimmingCharacters(in: .whitespaces))
         let regex:NSRegularExpression = try! NSRegularExpression(pattern: "\\s+", options: [])
         regex.replaceMatches(in: searchString, options: NSRegularExpression.MatchingOptions.reportCompletion, range: NSMakeRange(0, searchString.length), withTemplate:"+$1")
         let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(searchString.description)&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
-        //Making network call
-        json(.get, stringURL)
-            .map{ self.parse(json: $0 as AnyObject?)}
-            .observeOn(MainScheduler.instance)
-            .subscribe( onNext: {
-                self.movies.value = self.movies.value + $0
-                self.tableView.reloadData()
-            }
-            )
-            .disposed(by: disposeBag)
+        let url = URL(string: stringURL)
         
+        MovieNetwork.shared.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
+            if !moviesData.isEmpty{
+                self.movies.value = self.movies.value + moviesData
+                self.loadButton.isHidden = false
+                self.tableView.reloadData()
+            }else{
+                self.loadButton.isHidden = true
+            }
+        }
     }
     
     //Dismiss keyboard if triggered
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.searchBar.resignFirstResponder()
-    }
-    
-    //Parse the json to an Array<Movie>
-    func parse(json:AnyObject?)->[Movie]{
-        var titles = Set<String>()//filters out duplicates
-        var model: [Movie] = []
-        var hasItems = false
-        (((json as? Dictionary<String,Any>)?["results"]) as! Array<AnyObject>).forEach({ movie in
-            hasItems = true
-            let picture =  (((movie as AnyObject)["poster_path"]) as? String)
-            let title = (((movie as AnyObject)["title"]) as? String)
-            let score = (((movie as AnyObject)["vote_average"]) as? NSNumber)?.description
-            let id = (((movie as AnyObject)["id"]) as? NSNumber)?.description
-            let overview = (((movie as AnyObject)["overview"]) as? String)
-            let language = (((movie as AnyObject)["original_language"]) as? String)
-            let date = (((movie as AnyObject)["release_date"]) as? String)
-
-            if !titles.contains(title!){
-                titles.insert(title!)
-                model.append(Movie(id: id, title: title, score: score, picture: picture, overview: overview, releaseDate:date, originalLanguage: language))
-            }
-        })
-        if !hasItems{
-            loadButton.isHidden = true
-        }
-        return model
     }
 }
 
