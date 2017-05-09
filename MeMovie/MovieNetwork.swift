@@ -16,7 +16,7 @@ final class MovieNetwork{
     static let shared = MovieNetwork()
     private init() {}
 
-    func getImage(url:URL, completion:@escaping (_ data:Data)->Void){
+    func getData(url:URL, completion:@escaping (_ data:Data)->Void){
         Alamofire.request(url).responseData { dataRequest in
             DispatchQueue.main.async{
                 completion(dataRequest.data!)

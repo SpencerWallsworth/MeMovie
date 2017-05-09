@@ -28,7 +28,7 @@ class DetailViewController: UIViewController {
         if let pic = movie?.picture {
             let url = URL(string: "http://image.tmdb.org/t/p/w185/" + pic)
            
-            MovieNetwork.shared.getImage(url: url!, completion: { data in
+            MovieNetwork.shared.getData(url: url!, completion: { data in
                 DispatchQueue.main.async{
                     self.imageView.image = UIImage(data: data)
                 }
