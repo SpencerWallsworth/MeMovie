@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="70" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="MeMovie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="331" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdG-2y-JKW">
+                        <rect key="frame" x="8" y="8" width="315" height="53.5"/>
+                        <subviews>
+                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X4N-w1-PRz">
+                                <rect key="frame" x="5" y="0.0" width="305" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI8-f1-Ze7">
+                                        <rect key="frame" x="0.0" y="16.5" width="258" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yiP-xz-IqT">
+                                        <rect key="frame" x="263" y="16.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="X4N-w1-PRz" firstAttribute="leading" secondItem="XdG-2y-JKW" secondAttribute="leading" constant="5" id="31u-ec-GAe"/>
+                            <constraint firstAttribute="bottom" secondItem="X4N-w1-PRz" secondAttribute="bottom" id="FkA-Dc-QMJ"/>
+                            <constraint firstAttribute="trailing" secondItem="X4N-w1-PRz" secondAttribute="trailing" constant="5" id="gFE-pg-Glv"/>
+                            <constraint firstItem="X4N-w1-PRz" firstAttribute="top" secondItem="XdG-2y-JKW" secondAttribute="top" id="uG6-cM-dNc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.88853649445521976" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="XdG-2y-JKW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="H3T-b2-Vur"/>
+                    <constraint firstAttribute="bottom" secondItem="XdG-2y-JKW" secondAttribute="bottom" constant="8" id="SWC-4V-ThN"/>
+                    <constraint firstItem="XdG-2y-JKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Soy-dx-cl9"/>
+                    <constraint firstAttribute="trailing" secondItem="XdG-2y-JKW" secondAttribute="trailing" constant="8" id="tok-FY-pce"/>
+                </constraints>
+            </tableViewCellContentView>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="30"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="cardView" destination="XdG-2y-JKW" id="1FB-KK-kvb"/>
+                <outlet property="movieDetailTextLabel" destination="yiP-xz-IqT" id="6JC-4U-CKG"/>
+                <outlet property="movieTextLabel" destination="xI8-f1-Ze7" id="c88-7d-pqW"/>
+            </connections>
+            <point key="canvasLocation" x="78.5" y="67"/>
+        </tableViewCell>
+    </objects>
+</document>

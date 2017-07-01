@@ -8,14 +8,14 @@
 
 import Foundation
 struct Movie{
-    var id:String?
-    var title:String?
+    var id:String
+    var title:String
     var score:String?
     var picture:String?
     var overview:String?
-    var releaseDate:String?
-    var originalLanguage:String?
-    init(id:String?, title:String?, score:String?, picture:String?, overview:String?, releaseDate:String?, originalLanguage:String?) {
+    var releaseDate:String
+    var originalLanguage:String
+    init(id:String, title:String, score:String?, picture:String?, overview:String?, releaseDate:String, originalLanguage:String) {
         self.id = id
         self.title = title
         self.score = score

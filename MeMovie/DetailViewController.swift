@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SafariServices
 class DetailViewController: UIViewController {
     var movie:Movie?
     
@@ -19,26 +19,44 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        overviewText.isEditable = false
-        titleLabel.text = movie?.title
-        overviewText.text = movie?.overview
-        date.text = movie?.releaseDate
-        language.text = movie?.originalLanguage
-        
-        if let pic = movie?.picture {
-            let url = URL(string: "http://image.tmdb.org/t/p/w185/" + pic)
-           
-            MovieNetwork.shared.getData(url: url!, completion: { data in
-                DispatchQueue.main.async{
-                    self.imageView.image = UIImage(data: data)
-                }
-            })
-           
-        }else{
-            imageView.image = #imageLiteral(resourceName: "brokenImage")
-        }
+        if let title = (movie?.title), let date =  movie?.releaseDate, let language = movie?.originalLanguage{
+            
+            self.overviewText.isEditable = false
+            self.titleLabel.text = title
+            self.date.text = date
+            self.language.text = language
+            self.overviewText.text = movie?.overview ?? ""
+            if let pic = movie?.picture {
+                let url = URL(string: "http://image.tmdb.org/t/p/w185/" + pic)
+               
+                MovieNetwork.getData(url: url!, completion: { data in
+                    DispatchQueue.main.async{
+                        self.imageView.image = UIImage(data: data)
+                    }
+                })
+               
+            }else{
+                imageView.image = #imageLiteral(resourceName: "brokenImage")
+            }
+            }else{
+                self.dismiss(animated: true, completion: nil)
+            }
     }
     
+
+    @IBAction func searchForMovie(_ sender: UIButton) {
+        MovieNetwork.nagivateToItunesURL(title: (movie?.title)!, errorHandler: {message in
+            //pop up an alertviewcontroller with the message
+            DispatchQueue.main.async {
+                let alertController = UIAlertController(title: "ERROR", message: message, preferredStyle: .alert)
+                    let okayAction = UIAlertAction(title: "Okay", style: .cancel, handler: nil)
+            alertController.addAction(okayAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        
+        })
+    }
+
 
 
     override func didReceiveMemoryWarning() {
