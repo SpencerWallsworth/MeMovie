@@ -32,7 +32,6 @@ import UIKit
     }
     func update(){
         cardView.layer.cornerRadius = 9
-        cardView.layer.masksToBounds = false
         cardView.layer.shadowOffset = CGSize(width: 0, height: 5)
         cardView.layer.shadowColor = UIColor.black.cgColor
         cardView.layer.shadowOpacity = 0.3

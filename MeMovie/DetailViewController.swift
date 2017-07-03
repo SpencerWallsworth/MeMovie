@@ -12,40 +12,50 @@ class DetailViewController: UIViewController {
     var movie:Movie?
     
     @IBOutlet weak var titleLabel: UILabel!
+
     @IBOutlet weak var overviewText: UITextView!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var date: UILabel!
     @IBOutlet weak var language: UILabel!
+    @IBOutlet weak var genres: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let title = (movie?.title), let date =  movie?.releaseDate, let language = movie?.originalLanguage{
             
-            self.overviewText.isEditable = false
             self.titleLabel.text = title
             self.date.text = date
             self.language.text = language
-            self.overviewText.text = movie?.overview ?? ""
+            
+            if let overview = movie?.overview{
+                self.overviewText.text = overview
+            }else{
+                self.overviewText.text = "N/A"
+            }
+            self.overviewText.setNeedsDisplay()
+            
+            self.genres.text = movie?.genres ?? ""
             if let pic = movie?.picture {
                 let url = URL(string: "http://image.tmdb.org/t/p/w185/" + pic)
-               
-                MovieNetwork.getData(url: url!, completion: { data in
+                
+                MovieNetwork.shared.getData(url: url!, completion: { data in
                     DispatchQueue.main.async{
                         self.imageView.image = UIImage(data: data)
                     }
                 })
-               
+                
             }else{
                 imageView.image = #imageLiteral(resourceName: "brokenImage")
             }
-            }else{
-                self.dismiss(animated: true, completion: nil)
-            }
+        }else{
+            self.dismiss(animated: true, completion: nil)
+        }
     }
+    
     
 
     @IBAction func searchForMovie(_ sender: UIButton) {
-        MovieNetwork.nagivateToItunesURL(title: (movie?.title)!, errorHandler: {message in
+        MovieNetwork.shared.nagivateToItunesURL(title: (movie?.title)!, errorHandler: {message in
             //pop up an alertviewcontroller with the message
             DispatchQueue.main.async {
                 let alertController = UIAlertController(title: "ERROR", message: message, preferredStyle: .alert)

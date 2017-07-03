@@ -31,7 +31,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
     var prevSearchString = ""
     var isRecording = false
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad()        
         tabBar.items?.first?.image?.withRenderingMode(.alwaysTemplate)
         updateAudioRecordDisplay()
         self.searchBar.delegate = self
@@ -104,9 +104,9 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
         - Used to to search for new keywords.
      */
     func searchByText(text:String){
-        let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(MovieNetwork.format(parameter: text))&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
+        let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(MovieNetwork.shared.format(parameter: text))&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
         let url = URL(string: stringURL)
-        MovieNetwork.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
+        MovieNetwork.shared.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
             self.movies.value =  moviesData
             self.loadButton.isHidden = false
             self.tableView.reloadData()
@@ -119,12 +119,12 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
      */
     func loadMoreItems(){
         //converting adjacent spaces into single + for the URL
-        let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(MovieNetwork.format(parameter: prevSearchString))&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
+        let stringURL = "https://api.themoviedb.org/3/search/movie?query=\(MovieNetwork.shared.format(parameter: prevSearchString))&api_key=9b1cfd760d88a01128ee7c753057bacf&page=\(self.page)"
         
         print(stringURL)
         let url = URL(string: stringURL)
         
-        MovieNetwork.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
+        MovieNetwork.shared.getMovies(url: url!, disposeBag: disposeBag) { moviesData in
             if !moviesData.isEmpty{
                 self.movies.value = self.movies.value + moviesData
                 self.loadButton.isHidden = false
