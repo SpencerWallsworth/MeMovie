@@ -14,6 +14,7 @@ import RxAlamofire
 
 final class MovieNetwork{
     class func getData(url:URL, completion:@escaping (_ data:Data)->Void){
+        
         Alamofire.request(url).responseData { dataRequest in
             DispatchQueue.main.async{
                 completion(dataRequest.data!)

@@ -19,6 +19,7 @@
 		8158EC3C1EC03F8B00BF97D7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8158EC3A1EC03F8B00BF97D7 /* DetailViewController.xib */; };
 		81A3A52E1F04896B006C5D7E /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A3A52C1F04896B006C5D7E /* MovieTableViewCell.swift */; };
 		81A3A52F1F04896B006C5D7E /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81A3A52D1F04896B006C5D7E /* MovieTableViewCell.xib */; };
+		81B4B4E81F097EE1000DBE59 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B4B4E71F097EE1000DBE59 /* RoundedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8158EC3A1EC03F8B00BF97D7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		81A3A52C1F04896B006C5D7E /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		81A3A52D1F04896B006C5D7E /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		81B4B4E71F097EE1000DBE59 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		AD6EFDEF4EF32C91A769E252 /* Pods-MeMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MeMovie/Pods-MeMovie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 		81A3A5211F045B25006C5D7E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				81B4B4E71F097EE1000DBE59 /* RoundedView.swift */,
 				8158EC291EBEA9EC00BF97D7 /* Main.storyboard */,
 				8158EC2E1EBEA9ED00BF97D7 /* LaunchScreen.storyboard */,
 				8158EC3A1EC03F8B00BF97D7 /* DetailViewController.xib */,
@@ -266,6 +269,7 @@
 			files = (
 				8156970A1EC1225100EF9891 /* MovieNetwork.swift in Sources */,
 				8158EC281EBEA9EB00BF97D7 /* ViewController.swift in Sources */,
+				81B4B4E81F097EE1000DBE59 /* RoundedView.swift in Sources */,
 				81A3A52E1F04896B006C5D7E /* MovieTableViewCell.swift in Sources */,
 				8158EC261EBEA9EB00BF97D7 /* AppDelegate.swift in Sources */,
 				8158EC381EBF999E00BF97D7 /* Movie.swift in Sources */,

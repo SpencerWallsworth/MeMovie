@@ -10,9 +10,11 @@ import UIKit
 import RxSwift
 import RxCocoa
 import Speech
+import CoreMotion
 
 class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate,UITabBarDelegate,AVAudioRecorderDelegate, AVAudioPlayerDelegate{
     var movies = Variable<[Movie]>([])
+    var gryo = Variable<CMGyroData?>(nil)
     let disposeBag = DisposeBag()
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
@@ -25,7 +27,6 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
     let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer()
     let request = SFSpeechAudioBufferRecognitionRequest()
     var recognitionTask: SFSpeechRecognitionTask?
-    
     var page = 1
     var prevSearchString = ""
     var isRecording = false
@@ -47,6 +48,7 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
             self.searchByText(text: self.searchBar.text!)
             self.prevSearchString = self.searchBar.text!
         }).disposed(by: disposeBag)
+        
         
         //searchbar
         searchBar.rx.textDidEndEditing.bind(onNext:{
@@ -196,6 +198,13 @@ class ViewController: UIViewController, UISearchBarDelegate, UITextFieldDelegate
                 print(error)
             }
         })
+        }
+    }
+    
+    override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
+        if motion == UIEventSubtype.motionShake{
+            searchBar.text = ""
+            movies.value = []
         }
     }
     
