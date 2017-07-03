@@ -12,6 +12,7 @@ It supplies an alternative interface to Itunes.
   <li>Press the button again</li>
   <li>Click on the search bar and press search</li>
 </ul>
+
 ### Clear List
 Shake the screen to clear the list
 
