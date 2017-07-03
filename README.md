@@ -9,7 +9,7 @@ It supplies an alternative interface to Itunes.
 <ul>
   <li>Click on the green microphone icon at the bottom of the screen</li>
   <li>Say the movie you wish to find</li>
-  <li>Press the. button again</li>
+  <li>Press the button again</li>
   <li>Click on the search bar and press search</li>
 </ul>
 ### Clear List
